@@ -13,6 +13,7 @@ class ContactFormController extends Controller
     }
     // first for store
     public function store(ContactFormRequest $request) {
-        $value = 
+        // return redirect and flashing session data
+        return redirect()->route('contact.index')->with('status', 'Contact form is successfully submitted');
     }
 }

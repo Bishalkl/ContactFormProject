@@ -22,3 +22,4 @@ Route::post('/contact-form', [ContactFormController::class, 'store'])->name('con
 
 // view routes
 Route::view('/about-us', 'aboutus')->name('aboutUs');
+Route::view('/profileDashbaord', 'profile')->name('profile.dashboard');
