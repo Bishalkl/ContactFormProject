@@ -20,7 +20,6 @@ class ContactFormRequest extends FormRequest
             'address'         => 'required|string|max:500',
             'gender'          => 'required|in:Male,Female,Other',
             'dob'             => 'required|date|before:today',
-            // 'photo'           => 'required|image|mimes:jpg,jpeg,png,gif|max:20|dimensions:min_width=50,min_height=50',
             'qualification'   => 'required|in:SEE,SLC,Bachelor,Master,PhD,No Qualification',
             'country'         => 'required|in:Nepal,India,China,Japan',
             'contact'         => 'required|digits_between:7,15',
@@ -57,13 +56,6 @@ class ContactFormRequest extends FormRequest
             'dob.required'           => 'Date of birth is required.',
             'dob.date'               => 'Date of birth must be a valid date.',
             'dob.before'             => 'Date of birth must be in the past.',
-
-            // // Photo
-            // 'photo.required'         => 'Please upload a photo.',
-            // 'photo.image'            => 'The uploaded file must be an image.',
-            // 'photo.mimes'            => 'Photo must be a file of type: jpg, jpeg, png, or gif.',
-            // 'photo.max'              => 'Photo size must not exceed 20KB.',
-            // 'photo.dimensions'       => 'Photo must be at least 50x50 pixels in size.',
 
             // Qualification
             'qualification.required' => 'Please select a qualification.',
