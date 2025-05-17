@@ -2,7 +2,9 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
       <!-- Left: Logo or Site Name -->
-      <div class="text-xl font-semibold text-blue-600">Welcome</div>
+       <a href="{{ route('home') }}">
+        <div class="text-xl font-semibold text-blue-600">Welcome</div>
+      </a>
 
       <!-- Center: Links -->
       <div class="flex space-x-6 text-gray-600 text-sm">

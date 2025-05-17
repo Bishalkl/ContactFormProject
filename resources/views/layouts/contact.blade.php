@@ -12,7 +12,7 @@
     @include('layouts.header')
 
     <!-- Yield section 'contact' -->
-    @yield('welcome-section')
+    @yield('contact-section')
     <!-- include footer -->
     @include('layouts.footer')
 </body>
