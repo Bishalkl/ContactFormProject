@@ -17,15 +17,6 @@
       >
         <strong class="font-bold">Success!</strong>
         <span class="block sm:inline">{{ session('status') }}</span>
-
-        @if(session('value'))
-          <a href="{{ route('profile.dashboard', session('value')) }}" 
-             class="underline ml-2 text-blue-600 hover:text-blue-800" target="_blank">
-            View Profile
-          </a>
-        @endif
-
-        <button @click="show = false" class="absolute top-0 right-0 mt-2 mr-3 font-bold text-xl leading-none">&times;</button>
       </div>
     @endif
 
@@ -39,8 +30,6 @@
       >
         <strong class="font-bold">Error!</strong>
         <span class="block sm:inline">{{ session('error') }}</span>
-
-        <button @click="show = false" class="absolute top-0 right-0 mt-2 mr-3 font-bold text-xl leading-none">&times;</button>
       </div>
     @endif
 
