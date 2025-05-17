@@ -7,7 +7,7 @@
   <p class="text-lg text-gray-600 mb-8 text-center max-w-xl">
     We're glad you're here! If you'd like to reach out, feel free to fill out our contact form.
   </p>
-  <a href="{{ route('contactform') }}"
+  <a href="{{ route('contact.index') }}"
      class="inline-block bg-blue-600 text-white text-lg font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 shadow transition duration-300">
     Go to Contact Form
   </a>

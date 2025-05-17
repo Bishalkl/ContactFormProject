@@ -13,14 +13,17 @@
         <div>
           <label class="block text-sm font-medium mb-1">First Name *</label>
           <input type="text" name="first_name"  class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300">
+          <x-input-error field="first_name" />
         </div>
         <div>
           <label class="block text-sm font-medium mb-1">Second Name (Optional)</label>
           <input type="text" name="second_name" class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300">
+          <x-input-error field="second_name" />
         </div>
         <div>
           <label class="block text-sm font-medium mb-1">Last Name *</label>
           <input type="text" name="last_name"  class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300">
+          <x-input-error field="last_name" />
         </div>
       </div>
 
@@ -28,6 +31,7 @@
       <div>
         <label class="block text-sm font-medium mb-1">Address *</label>
         <input type="text" name="address"  class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300">
+        <x-input-error field="address" />
       </div>
 
       {{-- Gender & DOB --}}
@@ -40,19 +44,22 @@
             <option value="Female">Female</option>
             <option value="Other">Other</option>
           </select>
+          <x-input-error field="gender" />
         </div>
         <div>
           <label class="block text-sm font-medium mb-1">Date of Birth *</label>
           <input type="date" name="dob"  class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300">
+           <x-input-error field="dob" />
         </div>
       </div>
 
-      {{-- Photo Upload --}}
+      <!-- {{-- Photo Upload --}}
       <div>
         <label class="block text-sm font-medium mb-1">Upload Photo *</label>
         <input type="file" name="photo" accept="image/*"  class="w-full file:px-4 file:py-2 file:border-0 file:bg-blue-600 file:text-white file:rounded-lg hover:file:bg-blue-700">
         <p class="text-xs text-gray-500 mt-1">Allowed size: 5KB - 20KB</p>
-      </div>
+         <x-input-error field="photo" />
+      </div> -->
 
       {{-- Qualification --}}
       <div>
@@ -66,6 +73,7 @@
           <option value="PhD">PhD</option>
           <option value="No Qualification">No Qualification</option>
         </select>
+         <x-input-error field="qualification" />
       </div>
 
       {{-- Country --}}
@@ -78,6 +86,7 @@
           <option value="China">China</option>
           <option value="Japan">Japan</option>
         </select>
+         <x-input-error field="country" />
       </div>
 
       {{-- Contact Number --}}
@@ -85,6 +94,7 @@
         <label class="block text-sm font-medium mb-1">Contact Number *</label>
         <input type="tel" name="contact"  pattern="[0-9]{7,15}" class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-300" placeholder="e.g., 9800000000">
       </div>
+       <x-input-error field="contact" />
 
       {{-- Submit Button --}}
       <div class="text-center">
